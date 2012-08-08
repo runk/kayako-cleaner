@@ -8,7 +8,7 @@ CREATE TEMPORARY TABLE trackids (tickettimetrackid INT);
 
 -- Fill temp tables
 INSERT INTO ticketids(ticketid) 
-SELECT ticketid FROM swtickets WHERE (dateline + (86400 * 15) < UNIX_TIMESTAMP(NOW()));
+SELECT ticketid FROM swtickets WHERE (dateline + (86400 * 90) < UNIX_TIMESTAMP(NOW()));
 
 INSERT INTO trackids(tickettimetrackid) 
 SELECT tickettimetrackid FROM swtickettimetracks A LEFT JOIN ticketids B ON A.ticketid = B.ticketid;

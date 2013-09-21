@@ -25,7 +25,6 @@ DELETE A FROM swescalationpaths      A JOIN ticketids B ON A.ticketid = B.ticket
 DELETE A FROM swticketnotes          A JOIN ticketids B ON A.linktypeid = B.ticketid;
 DELETE A FROM swticketauditlogs      A JOIN ticketids B ON A.ticketid = B.ticketid;
 DELETE A FROM swticketlinkedtables   A JOIN ticketids B ON A.ticketid = B.ticketid;
-DELETE A FROM swticketlinks          A JOIN ticketids B ON A.ticketid = B.ticketid;
 DELETE A FROM swticketmergelog       A JOIN ticketids B ON A.ticketid = B.ticketid;
 DELETE A FROM swticketmessageids     A JOIN ticketids B ON A.ticketid = B.ticketid;
 DELETE A FROM swticketposts          A JOIN ticketids B ON A.ticketid = B.ticketid;

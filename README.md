@@ -19,4 +19,6 @@ ids, so if you want any complex criteria - write it here:
     SELECT ticketid FROM swtickets WHERE (dateline + (86400 * 90) < UNIX_TIMESTAMP(NOW()));
 ```  
 
-  
+### Purge all tickets in trash
+
+Run the clean-trash.sql script  
